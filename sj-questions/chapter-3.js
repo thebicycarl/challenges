@@ -90,13 +90,13 @@ let friends = {
         age: 22,
         hobbies: ['basketball', 'exploring']
     }
-    
+
 }
 
 let friendsBackup = {}
 
 function copyFriends(obj) {
-    
+
     let objectKeys = Object.keys(obj)
     for (const val of objectKeys) {
         friendsBackup[val] = friends[val]
@@ -105,11 +105,11 @@ function copyFriends(obj) {
 }
 // console.log(copyFriends(friends))
 
-friends.joseph = {isHe: 'no'}
+friends.joseph = { isHe: 'no' }
 
 // console.log(friends)
 
-const studentGrades = { 
+const studentGrades = {
     math: 8,
     physics: 8,
     economics: 10,
@@ -124,13 +124,35 @@ function avGrade(obj) {
         total += obj[score]
     }
     let ave = total / objKeys.length
-    return ave 
+    return ave
 }
 
 // console.log(avGrade(studentGrades))
 
 let gradesArray = [
-    {subject: 'math', grade: 8},
-    {subject: 'coding', grade: 10},
-    {subject: 'economics', grade: 9}
+    { subject: 'math', grade: 8 },
+    { subject: 'coding', grade: 10 },
+    { subject: 'economics', grade: 9 }
 ]
+
+function sortByGrade(arr) {
+        let sortedArr = arr.sort((a, b) => b.grade - a.grade)
+        return sortedArr
+}
+
+// console.log(sortByGrade(gradesArray))
+
+const stringOfWords = 'yo wassup homies, my name is yo yo, yo wassup. Who you'
+
+function wordCounter() {
+    const cleanString = stringOfWords.replace(/[^a-zA-Z\s]/g, '')
+    const splitString = cleanString.split(' ')
+    let wordCount = {}
+    for (const word of splitString) {
+        wordCount[word] = (wordCount[word] || 0) + 1
+    }
+
+    return wordCount
+}
+
+console.log(wordCounter(stringOfWords))
