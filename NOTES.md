@@ -15,3 +15,6 @@ for (var i in arr) {
 for (var i of arr) {
   console.log(i); // logs "3", "5", "7"
 }
+
+
+When adding the script element to the head, just add the keyword 'defer' after the src, this will load it after the html loads.
