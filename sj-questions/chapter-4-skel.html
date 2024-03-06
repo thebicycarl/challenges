@@ -12,7 +12,7 @@
 
     <h1 id="main-title">DOM Manipulation</h1>
 
-    <form id="form-example">
+    <form id="form-example" onsubmit="return handleSubmitForm(event)">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
         <label for="age">Age:</label>
@@ -34,6 +34,35 @@
         </div>
     </div>
 
+    <script>
+        let modalBtn = document.getElementById('open-modal-btn')
+        let modal = document.getElementById('modal')
+        let closeModalBtn = document.getElementById('close-modal-btn')
+        let xBtn = document.querySelector('.close')
+        let textArea = document.getElementById('text-area')
+    
+
+        function handleOpenModal() {
+            console.log('hit');
+            modal.style.display = 'flex'
+
+        }
+
+        modalBtn.addEventListener('click', handleOpenModal)
+
+        function handleCloseModal () {
+            modal.style.display = 'none'
+        }
+
+        closeModalBtn.addEventListener('click', handleCloseModal)
+        xBtn.addEventListener('click', handleCloseModal)
+
+        function handleSubmitForm(event) {
+            event.preventDefault()
+        }
+
+
+    </script>
 </body>
 
 </html>
