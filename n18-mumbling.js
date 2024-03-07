@@ -5,11 +5,11 @@ const accum = str => {
     const lower = str.toLowerCase()
     const upper = str.toUpperCase()
     let built = upper[0]
-    for (let i = 0; i < lower.length; i++) {
+    let lowerBlock = ''
+    for (let i = 0; i < lower.length-1; i++) {
         let upperLetter = upper[i]
-        let lowerBlock = ''
         for (let j = 0; j < i; j++) {
-            lowerBlock += lower[i+1]
+            lowerBlock += lower[i]
             built += '-' + upperLetter + lowerBlock
         }
 
