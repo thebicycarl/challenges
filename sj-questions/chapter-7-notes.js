@@ -106,9 +106,25 @@ let ultimateArray = [1,5,9,8,18]
 
 // ultimateArray.forEach((myValue, myIndex) => {console.log(`the value at index ${myIndex} is ${myValue}`)})
 
+// map
 
+let aNewArray = ultimateArray.map((currentValue,) => {
+    return currentValue * 2
+})
+// adjusts the values in the array and maps them to a new one. Can also take the index and something else as an argument
 
+// filter
 
+let filteredArray = ultimateArray.filter((curr) => {
+    let isEven = curr % 2 === 0;
+    return !isEven //filters out the even values in the array
+})
+
+// reduce
+
+let reducedArray = ultimateArray.reduce((accumulator, curr, currIndex) => {
+    return accumulator + `, ${curr}:${currIndex}` // this example adds the current value and the current index to the accumulator. So what will be returned is a string with all current values and their indexes .
+}, '') //Takes a second argument which is the start point of the returned data. In this case it's a string, but can be any valid data type. 
 
 
 
