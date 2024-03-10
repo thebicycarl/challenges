@@ -6,7 +6,7 @@ for in loops iterate through the keys of an object (eg the index in an array)
 
 for of loops iterate through the values of an object (eg the values in an array)
 
-eg: (note the js tags for markdown styling)
+eg: (note the ```js tags style the markdown to show code)
 
 ```js
 var arr = [3, 5, 7];
