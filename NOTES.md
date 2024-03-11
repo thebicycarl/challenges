@@ -1,6 +1,12 @@
 # General notes
 
-## inspiration websites
+## My conventions
+
+camelCase: functions
+CamelCase: classes
+snake_case: variables
+
+## Inspiration websites
 https://vercel.com/
 
 https://afterschoolmaths.co.nz/ 
@@ -38,6 +44,15 @@ Break down convoluted code blocks into steps
 
 ### Big O notation
 Number of inputs vs time taken
+
+
+O(n2)
+
+O(n)
+
+O(log n)
+
+O(1)
 
 #### O(n2)
 Exponential increase of time with additional inputs
