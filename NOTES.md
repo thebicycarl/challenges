@@ -3,7 +3,9 @@
 ## My conventions
 
 camelCase: functions
+
 CamelCase: classes
+
 snake_case: variables
 
 ## Inspiration websites
