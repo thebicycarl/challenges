@@ -1,6 +1,6 @@
 // Given a string which includes only letters, write a function that produces the outputs below.
 
-
+//
 const accum = str => {
     const lower = str.toLowerCase()
     const upper = str.toUpperCase()
